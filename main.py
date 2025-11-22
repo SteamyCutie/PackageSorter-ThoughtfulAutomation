@@ -24,5 +24,23 @@ def main():
         print(f"  Mass: {mass} kg")
         print(f"  → Dispatch to: {stack}")
 
+    print("\n" + "=" * 60)
+    print("Running unit tests...")
+    print("=" * 60)
+    
+    import unittest
+    from test_package_sorter import TestPackageSorter
+    
+    suite = unittest.TestLoader().loadTestsFromTestCase(TestPackageSorter)
+    runner = unittest.TextTestRunner(verbosity=2)
+    result = runner.run(suite)
+    
+    print("\n" + "=" * 60)
+    if result.wasSuccessful():
+        print("✓ All tests passed!")
+    else:
+        print("✗ Some tests failed.")
+    print("=" * 60)
+
 if __name__ == '__main__':
     main()
