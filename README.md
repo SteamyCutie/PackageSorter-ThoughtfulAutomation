@@ -1,5 +1,7 @@
 # Package Sorter - Robotic Automation Factory
 
+>Since **Replit** project creation is only available with AI Agent mode, I've composed my own repo for transparency.
+
 ## Overview
 This project implements a package sorting system for Thoughtful's robotic automation factory. The system classifies packages into three stacks (STANDARD, SPECIAL, or REJECTED) based on their dimensions and mass.
 
